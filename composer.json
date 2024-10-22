@@ -1,17 +1,18 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "yordanluturyalii/wire-content",
+    "description": "An awesome content management system for Laravel",
+    "version": "0.0.1",
     "keywords": [
-        ":vendor_name",
+        "wire content",
         "laravel",
-        ":package_slug"
+        "filamentphp"
     ],
     "homepage": "https://github.com/:vendor_slug/:package_slug",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Yordan Luturyali",
+            "email": "yordanluturyali@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,14 +36,7 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "WireContent\\": "src/"
         }
     },
     "scripts": {
@@ -73,10 +67,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "WireContent\\WireContentServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "WireContent": "WireContent\\Facades\\WireContent"
             }
         }
     },
